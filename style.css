@@ -1,0 +1,114 @@
+/* Definición de variables CSS personalizadas */
+:root {
+    --primary-color: rgb(255, 255, 255);   
+    --secondary-color: rgb(21, 21, 21);   
+    --blue-color: rgb(7, 104, 169);                
+    --yellow--color: rgb(255, 204, 0);             
+    --border: 2px solid var(--blue-color); 
+    --spacing: 28px;                      
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Estilos del cuerpo del documento */
+body {
+    background-color: var(--primary-color); 
+    color: var(--primary-color);             
+    display: grid;                           
+    grid-template-columns: repeat(3, 1fr);    
+    grid-auto-rows: 300px;                   
+    gap: var(--spacing);                     
+    padding: var(--spacing);                
+  }
+
+/* Estilos de la cabecera */
+header {
+  grid-row: 1/3;
+  display: grid;
+  background-color: var(--blue-color);
+  padding: var(--spacing);
+  text-align: center;
+  align-items: center;                 
+  }
+
+  /* Estilos del título en la cabecera */
+header > h1 {
+  font-size: 2em; 
+  text-transform: uppercase;
+  color: var(--primary-color);             
+  }
+
+/* Estilos del contenido principal */
+main {
+    border: var(--border);                   
+    color: var(--blue-color);              
+    text-transform: uppercase;              
+    display: grid;                           
+    place-items: center;                     
+    text-align: center;                     
+}
+  
+  /* Estilos del pie de página */
+  footer {
+    grid-column: 2/4;                        
+    display: grid;                           
+    place-items: left;                       
+    background-color: var(--yellow--color);  
+    padding: var(--spacing);     
+  }            
+
+/* Estilos del botón en el pie de página */
+footer > button {
+  width: 200px; 
+  height: fit-content;
+  padding: var(--spacing);
+  border: none;
+  border-radius: 15px;
+  text-transform: uppercase;
+  cursor: pointer;            
+  }
+
+@media (max-width: 650px) {
+    body {
+      grid-template-columns: 1fr;           
+    }
+    footer {
+      grid-column: 1;                      
+    }
+  }
+
+.school {
+  background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/canadas-teide.jpg);
+}
+
+.student {
+  background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/cultivo-platanos-canarias.jpg);
+}
+
+.time {
+  background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/barco-acantilados-gigantes-tenerife.jpg);
+}
+
+.alumni {
+  background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/plato-papas-arrugadas-mojo.jpg);
+}
+
+.alumni,
+.school,
+.student,
+.time {
+  background-size: cover;
+  min-height: 200px;
+  height: 100%;
+}
+
+/* Estilos para las clases específicas (fondos de imágenes) */
+.alumni, .school, .student, .time {
+    background-size: cover;                 
+  }
