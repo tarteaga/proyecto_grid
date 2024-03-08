@@ -1,4 +1,4 @@
-/* Definición de variables CSS personalizadas */
+
 :root {
     --primary-color: rgb(255, 255, 255);   
     --secondary-color: rgb(21, 21, 21);   
@@ -9,14 +9,13 @@
     font-family: Arial, Helvetica, sans-serif;
   }
 
-  /* Estilos generales */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
 
-/* Estilos del cuerpo del documento */
+
 body {
     background-color: var(--primary-color); 
     color: var(--primary-color);             
@@ -27,7 +26,7 @@ body {
     padding: var(--spacing);                
   }
 
-/* Estilos de la cabecera */
+
 header {
   grid-row: 1/3;
   display: grid;
@@ -37,14 +36,14 @@ header {
   align-items: center;                 
   }
 
-  /* Estilos del título en la cabecera */
+
 header > h1 {
   font-size: 2em; 
   text-transform: uppercase;
   color: var(--primary-color);             
   }
 
-/* Estilos del contenido principal */
+
 main {
     border: var(--border);                   
     color: var(--blue-color);              
@@ -54,7 +53,7 @@ main {
     text-align: center;                     
 }
   
-  /* Estilos del pie de página */
+
   footer {
     grid-column: 2/4;                        
     display: grid;                           
@@ -63,7 +62,6 @@ main {
     padding: var(--spacing);     
   }            
 
-/* Estilos del botón en el pie de página */
 footer > button {
   width: 200px; 
   height: fit-content;
@@ -83,32 +81,32 @@ footer > button {
     }
   }
 
-.school {
+.teide {
   background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/canadas-teide.jpg);
 }
 
-.student {
+.platanos{
   background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/cultivo-platanos-canarias.jpg);
 }
 
-.time {
+.playa{
   background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/barco-acantilados-gigantes-tenerife.jpg);
 }
 
-.alumni {
+.papas{
   background-image: url(https://www.disfrutatenerife.com/f/espana/tenerife/galeria/big/plato-papas-arrugadas-mojo.jpg);
 }
 
-.alumni,
-.school,
-.student,
-.time {
+.papas,
+.teide,
+.platanos,
+.playa{
   background-size: cover;
   min-height: 200px;
   height: 100%;
 }
 
-/* Estilos para las clases específicas (fondos de imágenes) */
-.alumni, .school, .student, .time {
+
+.papas, .teide, .platanos, .playa {
     background-size: cover;                 
   }
